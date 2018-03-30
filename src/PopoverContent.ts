@@ -15,8 +15,7 @@ import {Popover} from "./Popover";
     <div class="arrow"></div> 
     <h3 class="popover-title" [hidden]="!title">{{ title }}</h3>
     <div class="popover-content">
-        <ng-content></ng-content>
-        {{ content }}
+        <ng-content [innerHtml]="content"></ng-content>
     </div> 
 </div>
 `,
